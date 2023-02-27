@@ -18,6 +18,16 @@
             android:textColor="@color/black"
             android:textSize="24sp" />
 
+        <TextView
+            android:id="@+id/text_view_email_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_restaurant_name"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif-medium"
+            android:padding="2dp"
+            android:text="elizabeth01wieczorek@gmail.com" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_starters"
             android:layout_width="200dp"
@@ -69,25 +79,56 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
-                    android:src="@drawable/main"
-                    android:scaleType="centerCrop"/>
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/main" />
 
                 <TextView
                     android:id="@+id/text_view_mains"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="8dp"
-                    android:textSize="18dp"
                     android:layout_gravity="center"
+                    android:layout_margin="8dp"
                     android:fontFamily="sans-serif-black"
-                    android:text="Mains" />
+                    android:text="Mains"
+                    android:textSize="18dp" />
 
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_desserts"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_mains"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/octopus" />
+
+        <TextView
+            android:id="@+id/text_view_desserts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Desserts"
+            android:textSize="18dp"/>
+
+        </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
 
     </RelativeLayout>
