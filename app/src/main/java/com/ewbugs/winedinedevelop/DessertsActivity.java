@@ -13,7 +13,7 @@ public class DessertsActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_desserts);//make sure to add to 'AndroidManifest.xml'
-        //intents- a way of moving to a new activity
+        //intents- (implicit) a way of moving to a new activity
         //list view - you need a reference for that
         //arrays - collection of variables such as Strings, int's etc.
         //array adapters - convert an array of things into views onto the screen
